@@ -6,7 +6,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Dictionary
-(ispell-dictionary "castellano8")
+;(ispell-dictionary "castellano8")
 
 ;; backup in single, flat directory
 (setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
@@ -24,5 +24,3 @@
 ;; emacs buffer, window persistence
 (setq desktop-save-mode t
       desktop-path '("."))
-
- 

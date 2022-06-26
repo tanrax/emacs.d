@@ -2,6 +2,9 @@
 (setq multi-term-program "/bin/fish")
 (global-set-key (kbd "<f12>") 'multi-term)
 
+;; dired
+(global-set-key (kbd "<f11>") 'dired)
+
 ;; multiple-cursors
 (require 'multiple-cursors)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)

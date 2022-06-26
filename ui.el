@@ -6,7 +6,7 @@
 (load-theme 'monokai t)
 
 ;; Font family and size
-(set-face-attribute 'default nil :font "JetBrains Mono" :height 140)
+(set-face-attribute 'default nil :font "JetBrains Mono" :height 100)
 
 ;;; Line numbers
 (require 'display-line-numbers)
