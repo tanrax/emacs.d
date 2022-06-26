@@ -62,4 +62,3 @@ Exempt major modes are defined in `display-line-numbers-exempt-modes'."
 
 ;; C spacing = 4 instead of default 2
 (setq-default c-basic-offset 4)
-
