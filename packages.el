@@ -27,6 +27,7 @@
 		    		multiple-cursors
 		    		multi-term
 		    		cmake-mode
+				corfu
 		    ))
 
 ;; Update packages

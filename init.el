@@ -10,9 +10,9 @@
       "core"
       "ui"
       "languages"
+      "burn"
       "plugins"
       "functions"
-      "burn"
       ))
 
 ;; Load files
@@ -51,7 +51,7 @@
  '(line-number-mode nil)
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
-   '(emmet-mode web-mode slime use-package ## expand-region paredit undo-tree elisp-format rainbow-delimiters elfeed multiple-cursors magit multi-term monokai-theme cmake-mode))
+   '(corfu emmet-mode web-mode slime use-package ## expand-region paredit undo-tree elisp-format rainbow-delimiters elfeed multiple-cursors magit multi-term monokai-theme cmake-mode))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(vc-annotate-background nil)
