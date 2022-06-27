@@ -11,6 +11,7 @@
       "ui"
       "languages"
       "burn"
+      "vpn"
       "plugins"
       "functions"
       ))

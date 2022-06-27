@@ -1,0 +1,18 @@
+(defun sudo-shell-command (command)
+  (interactive "MShell command (root): ")
+  (with-temp-buffer
+    (cd "/sudo::/")
+    (async-shell-command command)))
+
+(defun vpn ()
+  (interactive)
+  (let ((choice (car (completing-read-multiple "Select: " '("up" "down" "restart")))))
+    (if (string= choice "up")
+	(sudo-shell-command "wg-quick up wg0")
+      )
+    (if (string= choice "down")
+	(sudo-shell-command "wg-quick down wg0")
+	)
+    (if (string= choice "restart")
+	(sudo-shell-command "wg-quick down wg0 && wg-quick up wg0")
+	)))
