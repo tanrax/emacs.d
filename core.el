@@ -28,4 +28,4 @@
 ;;---
 
 ;; Eval buffer
-(global-set-key (kbd "C-c C-e") 'eval-region)
+(global-set-key (kbd "C-c e") 'eval-buffer)
