@@ -21,3 +21,11 @@
 
 ;; Autoload file changes
 (global-auto-revert-mode t)
+
+
+;;---
+;; Shortcuts
+;;---
+
+;; Eval buffer
+(global-set-key (kbd "C-c C-e") 'eval-region)
