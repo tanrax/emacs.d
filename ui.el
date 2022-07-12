@@ -8,6 +8,12 @@
 ;; Font family and size
 (set-face-attribute 'default nil :font "JetBrains Mono" :height 100)
 
+;; Add emojis
+(when (member "Noto Color Emoji" (font-family-list))
+  (set-fontset-font
+    t 'symbol (font-spec :family "Noto Color Emoji") nil 'prepend))
+
+
 ;;; Line numbers
 (require 'display-line-numbers)
 (defcustom display-line-numbers-exempt-modes
