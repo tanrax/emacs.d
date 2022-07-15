@@ -29,3 +29,18 @@
 
 ;; Eval buffer
 (global-set-key (kbd "C-c e") 'eval-buffer)
+
+;; Scroll one line up or down
+
+(defun gcm-scroll-down ()
+  (interactive)
+  (next-line)
+  (scroll-up 1))
+
+(defun gcm-scroll-up ()
+  (interactive)
+  (previous-line)
+  (scroll-down 1))
+
+(global-set-key "\M-n" 'gcm-scroll-down)
+(global-set-key "\M-p" 'gcm-scroll-up)
