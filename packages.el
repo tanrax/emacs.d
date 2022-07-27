@@ -14,20 +14,22 @@
 
 (setq my-packages '(
                     use-package
-		    		slime
-		    		paredit
+		    slime
+		    paredit
                     monokai-theme
                     web-mode
-		    		emmet-mode
-		    		magit
-		    		rainbow-delimiters
-		    		expand-region
-		    		undo-tree
-		    		elfeed
-		    		multiple-cursors
-		    		multi-term
-		    		cmake-mode
-				corfu
+		    emmet-mode
+		    magit
+		    rainbow-delimiters
+		    expand-region
+		    undo-tree
+		    elfeed
+		    multiple-cursors
+		    multi-term
+		    cmake-mode
+		    corfu
+		    markdown-mode
+		    dired-hide-dotfiles
 		    ))
 
 ;; Update packages

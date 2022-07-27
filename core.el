@@ -6,7 +6,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; backup in single, flat directory
-(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
+(setq backup-directory-alist '((".*" . "~/.local/share/Trash/files/")))
 
 ;; Garbage Collection after 20MB
 (setq gc-cons-threshold (* 20 1024 1024))
