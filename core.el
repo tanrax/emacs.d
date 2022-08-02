@@ -55,16 +55,20 @@
 
 (defun my/toggle-input ()
   (interactive)
-
     (if (string= my/input-active "en")
 	(progn
 	  (set-input-method 'spanish-prefix)
+	  ;;(shell-command "setxkbmap -layout es")
 	  (setq my/input-active "es")
-	  (message "Input ES")
-	  )
+	  (message "Input ES"))
       (progn
 	(set-input-method 'british)
+	;;(shell-command "setxkbmap -layout us")
 	(setq my/input-active "en")
 	(message "Input EN")
 	)))
+
+(global-set-key (kbd "\C-\\") 'my/toggle-input)
+;; ~? => ¿
+;; ~! => ¡
 
