@@ -44,3 +44,27 @@
 
 (global-set-key "\M-n" 'gcm-scroll-down)
 (global-set-key "\M-p" 'gcm-scroll-up)
+
+;; Layout keyboard
+
+(setq my/input-active "en")
+
+(defun my/current-input ()
+    (interactive)
+   (message (upcase my/input-active)))
+
+(defun my/toggle-input ()
+  (interactive)
+
+    (if (string= my/input-active "en")
+	(progn
+	  (set-input-method 'spanish-prefix)
+	  (setq my/input-active "es")
+	  (message "Input ES")
+	  )
+      (progn
+	(set-input-method 'british)
+	(setq my/input-active "en")
+	(message "Input EN")
+	)))
+
